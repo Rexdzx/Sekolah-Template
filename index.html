@@ -32,22 +32,25 @@
             </a>
             <nav id="navbar" class="navbar navbar-expand-lg">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a class="nav-link scrollto" href="profil-sekolah.html">Profil Sekolah</a></li>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a class="nav-link scrollto" href="./pages/profil-sekolah.html">Profil Sekolah</a></li>
                     <li class="dropdown"><a href="#"><span>Program Keahlian</span>
                             <i class="bi bi-chevron-down dropdown-indicator">
                             </i>
                         </a>
                         <ul>
-                            <li><a href="#">Jurusan 1</a></li>
-                            <li><a href="#">Jurusan 2</a></li>
-                            <li><a href="#">Jurusan 3</a></li>
-                            <li><a href="#">Jurusan 4</a></li>
+                            <li><a href="./pages/jurusan/rekayasa-perangkat-lunak.html">Rekayasa Perangkat Lunak</a>
+                            </li>
+                            <li><a href="./pages/jurusan/teknik-kendaraan-ringan.html">Teknik Kendaraan Ringan</a></li>
+                            <li><a href="./pages/jurusan/teknik-bisnis-sepeda-motor.html">Teknik Bisnis & Sepeda
+                                    Motor</a></li>
+                            <li><a href="./pages/jurusan/teknik-komputer-jaringan.html">Teknik Komputer & Jaringan</a>
+                            </li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="index.html#services">Berita</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#portfolio">Karya Siswa</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#contact">Kontak</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#berita-terbaru">Berita</a></li>
+                    <li><a class="nav-link scrollto" href="./pages/karya-siswa.html">Karya Siswa</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#kontak">Kontak</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
         </div>
@@ -95,7 +98,7 @@
         </a>
     </section>
 
-    <div id="main">
+    <main id="main">
         <section id="kata-sambutan" class="kata-sambutan">
             <div class="container">
                 <h3>Sambutan Kepala Sekolah</h3>
@@ -267,13 +270,153 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex justify-content-center">
+                    <a class="btn-readmore" href="berita.html">Lihat Lainnya &nbsp;<i class="bi bi-arrow-right"></i></a>
+                </div>
             </div>
+        </section>
 
-    </div>
-    </section>
-    </div>
+        <section id="berita-terbaru" class="berita-terbaru">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Berita Terbaru</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box-berita">
+                            <div class="img-berita"><img src="assets/img/berita/berita-1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="meta">
+                                <span class="tanggal-berita">Senin, Agustus 21</span>
+                                <span class="author"> / Author</span>
+                            </div>
+                            <h3 class="post-title"><a href="berita-detail.html">Eum ad dolor et. Autem aut fugiat
+                                    debitis voluptatem
+                                    consequuntur
+                                    sit</a></h3>
+                            <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium.
+                                Asperiores eum
+                                ipsa
+                                est officiis. Modi cupiditate exercitationem qui magni est...</p>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box-berita">
+                            <div class="img-berita"><img src="assets/img/berita/berita-2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="meta">
+                                <span class="tanggal-berita">Minggu, Agustus 20</span>
+                                <span class="author"> / Author</span>
+                            </div>
+                            <h3 class="post-title"><a href="berita-detail.html">Et repellendus molestiae qui est sed
+                                    omnis voluptates magnam</a></h3>
+                            <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum
+                                assumenda.
+                                Quisquam
+                                omnis aliquid necessitatibus tempora consectetur doloribus...</p>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box-berita">
+                            <div class="img-berita"><img src="assets/img/berita/berita-3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="meta">
+                                <span class="tanggal-berita">Sabtu, Agustus 19</span>
+                                <span class="author"> / Author</span>
+                            </div>
+                            <h3 class="post-title"><a href="berita-detail.html">Quia assumenda est et veritatis aut
+                                    quae</a></h3>
+                            <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis
+                                repellat
+                                sed quae
+                                consectetur magnam veritatis dicta nihil...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a class=" btn-readmore" href="berita.html">Baca Lainnya &nbsp;<i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="kontak">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Hubungi Kami</h2>
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="row gy-5 gx-lg-5">
+                    <div class="col-lg-12 box">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Nama Anda" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Email Anda" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek"
+                                    required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" placeholder="Pesan" required></textarea>
+                            </div>
+                            <div class="text-center"><button>Kirim Pesan</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <img src="assets/img/logo-1.webp" alt="">
+                            <div class="mt-4">
+                                <p class="my-2"><i class='bi bi-geo-alt '></i> Medan, Sumatera Utara, ID</p>
+                                <p class="my-2"><i class="bi bi-envelope"></i> info@gmail.com</p>
+                                <p class="my-2"><i class="bi bi-phone"></i> + 62 812 3456 7891</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <ul class="list-unstyled nav-links mb-4">
+                            <li><a href="#">Beranda</a></li>
+                            <li><a href="./pages/profil-sekolah.html">Profil Sekolah</a></li>
+                            <li><a href="karya-siswa.html">Karya Siswa</a></li>
+                            <li><a href="berita.html">Berita</a></li>
+                            <li><a href="index.html#kontak">Kontak</a></li>
+                        </ul>
+                        <div class="sit">
+                            <h4>Tetap Terhubung</h4>
+                        </div>
+                        <div class="social-links mb-3 mb-lg-0 text-center">
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
 
     <div id="preloader"></div>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
