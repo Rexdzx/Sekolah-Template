@@ -192,7 +192,7 @@ section {
         align-items: center;
         justify-content: space-between;
         padding: 14px 20px;
-        font-size: 20px;
+        font-size: 3.7vw;
         font-weight: 500;
         color: rgba(255, 255, 255, 0.7);
         white-space: nowrap;
@@ -308,6 +308,7 @@ section {
 
     .breadcrumbs ol {
         display: block;
+        font-size: 2vw;
     }
 
     .breadcrumbs ol li {
@@ -740,10 +741,6 @@ section {
     .visi-misi h3 {
         font-size: 28px;
     }
-}
-
-.visi-misi .nav-pills {
-    border-bottom: 1px solid rgba(var(--color-secondary-rgb), 0.2);
 }
 
 .visi-misi .nav-pills li {
@@ -1197,4 +1194,159 @@ section {
 
 .profil-sekolah .profil-sekolah-detail .content p {
     font-size: 1.3em;
+}
+
+/* Berita */
+
+.berita .posts-list article {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.berita .posts-list article+article {
+    margin-top: 60px;
+}
+
+.berita .posts-list .post-img {
+    height: 240px;
+    margin: -30px -30px 0 -30px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.berita .posts-list .post-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.berita .posts-list .title {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 0 1.2em 0;
+    margin: 20px 0 0 0;
+    height: 3.5em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+.berita .posts-list .title a {
+    color: var(--color-secondary);
+    transition: 0.3s;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+    position: relative;
+    transition: 0.3s;
+}
+
+.berita .posts-list .title a:hover {
+    color: var(--color-primary);
+}
+
+.berita .posts-list .meta-top {
+    margin-top: 20px;
+    color: var(--color-gray);
+}
+
+.berita .posts-list .meta-top ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.berita .posts-list .meta-top ul li+li {
+    padding-left: 20px;
+}
+
+.berita .posts-list .meta-top i {
+    font-size: 16px;
+    margin-right: 8px;
+    line-height: 0;
+    color: rgba(255, 179, 7, 0.8);
+}
+
+.berita .posts-list .meta-top a {
+    color: var(--color-gray);
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.berita .posts-list .content {
+    margin-top: 20px;
+    height: 7.8em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+}
+
+.berita .posts-list .read-more a {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 9px 30px;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 3em;
+}
+
+.berita .posts-list .read-more a:hover {
+    background: rgba(255, 179, 7, 0.8);
+}
+
+/* Detail Berita */
+.detail-berita .detail-berita-article {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.detail-berita .detail-berita-article .post-img {
+    margin: -30px -30px 20px -30px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.detail-berita .detail-berita-article .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 38px 0 0 0;
+    color: var(--color-secondary);
+}
+
+.detail-berita .detail-berita-article .content {
+    margin-top: 2em;
+}
+
+.detail-berita .detail-berita-article .content p {
+    font-size: 1.3em;
+}
+
+.detail-berita .detail-berita-article .meta-top ul li {
+    margin: 20px 0;
+}
+
+.detail-berita .detail-berita-article .meta-top i {
+    font-size: 16px;
+    margin-right: 8px;
+    line-height: 0;
+    color: rgba(255, 179, 7, 0.8);
+}
+
+.detail-berita .detail-berita-article .meta-top a {
+    color: var(--color-gray);
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1;
 }
