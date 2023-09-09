@@ -33,6 +33,7 @@
               }
           })
       }
+
       window.addEventListener('load', navbarlinksActive);
       document.addEventListener('scroll', navbarlinksActive);
 
