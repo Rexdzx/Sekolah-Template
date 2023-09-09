@@ -2,13 +2,270 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Detail Berita</title>
+    <link href="../assets/img/icons8-popeye-office-m-32.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="../assets/css/style.css" rel="stylesheet" as="preloader">
+    <link href="../assets/css/variabel.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1 style="display: flex; align-items: center; justify-content: center;">Coming Soon</h1>
-</body>
+    <header id="header" class="header fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+                <img src="../assets/img/logo-1.webp" alt="">
+            </a>
+            <nav id="navbar" class="navbar navbar-expand-lg">
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a class="nav-link scrollto" href="./profil-sekolah.html">Profil Sekolah</a></li>
+                    <li class="dropdown"><a href="#"><span>Program Keahlian</span>
+                            <i class="bi bi-chevron-down dropdown-indicator">
+                            </i>
+                        </a>
+                        <ul>
+                            <li><a href="../pages/jurusan/rekayasa-perangkat-lunak.html">Rekayasa Perangkat Lunak</a>
+                            </li>
+                            <li><a href="../pages/jurusan/teknik-kendaraan-ringan.html">Teknik Kendaraan Ringan</a>
+                            </li>
+                            <li><a href="../pages/jurusan/teknik-bisnis-sepeda-motor.html">Teknik Bisnis & Sepeda
+                                    Motor</a></li>
+                            <li><a href="../pages/jurusan/teknik-komputer-jaringan.html">Teknik Komputer & Jaringan</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="./berita.html">Berita</a></li>
+                    <li><a class="nav-link scrollto" href="./karya-siswa.html">Karya Siswa</a></li>
+                    <li><a class="nav-link scrollto" href="../index.html#kontak">Kontak</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </div>
+    </header>
 
-</html>
+    <main id="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Karya Siswa</h2>
+                    <ol>
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li>Karya Siswa</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <section id="karya-siswa" class="karya-siswa">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Karya Siswa</h2>
+                </div>
+                <div class="karya-siswa-isotope" data-karya-siswa-filter="*" data-karya-siswa-layout="masonry"
+                    data-karya-siswa-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <ul class="filter-karya-siswa">
+                            <li data-filter="*" class="filter-active">Semua</li>
+                            <li data-filter=".filter-app">Aplikasi</li>
+                            <li data-filter=".filter-design">Desain</li>
+                            <li data-filter=".filter-art">Seni</li>
+                            <li data-filter=".filter-web">Web</li>
+                        </ul>
+                    </div>
+                    <div class="row gy-4 karya-siswa-container">
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-app">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/app-1.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/app-1.jpeg" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Aplikasi 1</a></h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-design">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/design-1.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/design-1.jpeg"
+                                        class="img-fluid" alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Desain 1</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-art">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/seni-1.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/seni-1.jpeg" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Seni 1</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-web">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/web-1.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/web-1.jpeg" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Web 1</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-app">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/app-2.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/app-2.jpeg" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Aplikasi 2</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-design">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/design-2.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/design-2.jpeg"
+                                        class="img-fluid" alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Desain 2</a></h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-art">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/seni-2.jpg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/seni-2.jpg" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Seni 2</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-web">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/web-2.png" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/web-2.png" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Web 2</a></h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-app">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/app-3.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/app-3.jpeg" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Aplikasi 3</a></h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-design">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/design-3.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/design-3.jpeg"
+                                        class="img-fluid" alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Desain 3</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-art">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/seni-3.jpeg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/seni-3.jpeg" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Seni 3</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 karya-siswa-item filter-web">
+                            <div class="karya-siswa-card">
+                                <a href="../assets/img/karya-siswa/web-3.jpg" data-gallery="karya-siswa-galery-app"
+                                    class="glightbox"><img src="../assets/img/karya-siswa/web-3.jpg" class="img-fluid"
+                                        alt=""></a>
+                                <div class="karya-siswa-info">
+                                    <h4><a href="#" title="Lebih Detail">Web 3</a></h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <img src="../assets/img/logo-1.webp" alt="">
+                            <div class="mt-4">
+                                <p class="my-2"><i class='bi bi-geo-alt '></i> Medan, Sumatera Utara, ID</p>
+                                <p class="my-2"><i class="bi bi-envelope"></i> info@gmail.com</p>
+                                <p class="my-2"><i class="bi bi-phone"></i> + 62 812 3456 7891</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <ul class="list-unstyled nav-links mb-4">
+                            <li><a href="../index.html">Beranda</a></li>
+                            <li><a href="#">Profil Sekolah</a></li>
+                            <li><a href="karya-siswa.html">Karya Siswa</a></li>
+                            <li><a href="berita.html">Berita</a></li>
+                            <li><a href="../index.html#kontak">Kontak</a></li>
+                        </ul>
+                        <div class="sit">
+                            <h4>Tetap Terhubung</h4>
+                        </div>
+                        <div class="social-links mb-3 mb-lg-0 text-center">
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+</body>

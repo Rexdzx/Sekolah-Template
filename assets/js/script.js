@@ -64,3 +64,41 @@
       });
 
   });
+
+  const glightbox = GLightbox({
+      selector: '.glightbox'
+  });
+
+  let KsIsotope = document.querySelector('.karya-siswa-isotope');
+
+  if (KsIsotope) {
+
+      let ksFiler = KsIsotope.getAttribute('data-karya-siswa-filter') ? KsIsotope.getAttribute('data-karya-siswa-filter') : '*';
+      let ksLayout = KsIsotope.getAttribute('data-karya-siswa-layout') ? KsIsotope.getAttribute('data-karya-siswa-layout') : 'masonry';
+      let ksSort = KsIsotope.getAttribute('data-karya-siswa-sort') ? KsIsotope.getAttribute('data-karya-siswa-sort') : 'original-order';
+
+      window.addEventListener('load', () => {
+          let KsIsotope = new Isotope(document.querySelector('.karya-siswa-container'), {
+              itemSelector: '.karya-siswa-item',
+              layoutMode: ksLayout,
+              filter: ksFiler,
+              sortBy: ksSort
+          });
+
+          let menuFilters = document.querySelectorAll('.karya-siswa-isotope .filter-karya-siswa li');
+          menuFilters.forEach(function (el) {
+              el.addEventListener('click', function () {
+                  document.querySelector('.karya-siswa-isotope .filter-karya-siswa .filter-active').classList.remove('filter-active');
+                  this.classList.add('filter-active');
+                  KsIsotope.arrange({
+                      filter: this.getAttribute('data-filter')
+                  });
+                  if (typeof aos_init === 'function') {
+                      aos_init();
+                  }
+              }, false);
+          });
+
+      });
+
+  }

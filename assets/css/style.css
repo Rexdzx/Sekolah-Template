@@ -1350,3 +1350,99 @@ section {
     display: inline-block;
     line-height: 1;
 }
+
+/* Karya Siswa */
+
+.karya-siswa .filter-karya-siswa {
+    padding: 0 0 3em 0;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+.karya-siswa .filter-karya-siswa li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 10px;
+    line-height: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.karya-siswa .filter-karya-siswa li:hover,
+.karya-siswa .filter-karya-siswa li.filter-active {
+    color: var(--color-primary);
+}
+
+.karya-siswa .filter-karya-siswa li:first-child {
+    margin-left: 0;
+}
+
+.karya-siswa .filter-karya-siswa li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 575px) {
+    .karya-siswa .filter-karya-siswa li {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+.karya-siswa .karya-siswa-card {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 27em;
+    padding-bottom: 30px;
+    overflow: hidden;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .karya-siswa .karya-siswa-card {
+        height: 100%;
+    }
+}
+
+.karya-siswa .karya-siswa-card img {
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.karya-siswa .karya-siswa-card .karya-siswa-info {
+    padding: 25px 20px;
+    background-color: #fff;
+    position: relative;
+    border-top: 1px solid #f3f3f3;
+    z-index: 2;
+}
+
+.karya-siswa .karya-siswa-card .karya-siswa-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+.karya-siswa .karya-siswa-card .karya-siswa-info h4 a {
+    color: var(--color-default);
+    transition: 0.3s;
+}
+
+.karya-siswa .karya-siswa-card .karya-siswa-info h4 a:hover {
+    color: var(--color-primary);
+}
+
+.karya-siswa .karya-siswa-card .karya-siswa-info p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-right: 50px;
+}
+
+.karya-siswa .karya-siswa-card:hover img {
+    transform: scale(1.1);
+}
