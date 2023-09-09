@@ -399,8 +399,8 @@
                         <ul class="list-unstyled nav-links mb-4">
                             <li><a href="#">Beranda</a></li>
                             <li><a href="./pages/profil-sekolah.html">Profil Sekolah</a></li>
-                            <li><a href="karya-siswa.html">Karya Siswa</a></li>
-                            <li><a href="berita.html">Berita</a></li>
+                            <li><a href="./pages/karya-siswa.html">Karya Siswa</a></li>
+                            <li><a href="./pages/berita.html">Berita</a></li>
                             <li><a href="index.html#kontak">Kontak</a></li>
                         </ul>
                         <div class="sit">
@@ -418,7 +418,8 @@
         </div>
     </footer>
 
-    <div id="preloader"></div>
+    <div id="loading"></div>
+
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -426,4 +427,20 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script src="assets/js/script.js"></script>
+    <script>
+        let loader = document.getElementById('loading');
+        let header = document.getElementById('header');
+        let body = document.body;
+
+        window.addEventListener('load', function () {
+            loader.remove();
+            header.style.display = 'block';
+            body.style.display = 'auto';
+        });
+
+        body.style.display = 'hidden';
+        header.style.display = 'none';
+    </script>
 </body>
+
+</html>
